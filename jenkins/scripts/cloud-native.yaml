@@ -22,7 +22,7 @@ spec:
     spec:
       containers: #docker容器的配置
         - image: harbor.edu.cn/nju25/cloud-native:1.0.0 #pull镜像的地址
-          name: cloud_native
+          name: cloud-native
       imagePullSecrets:
         - name: nju25
 ---
@@ -39,7 +39,7 @@ spec:
     app: cloud-native
   ports:
     - name: tcp
-      nodePort: 31005  #host's port
+      nodePort: 31006  #host's port
       protocol: TCP
       port: 8080  #service's port
       targetPort: 8080  #target pod's port
