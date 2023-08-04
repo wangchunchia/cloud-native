@@ -21,7 +21,7 @@ spec:
         app: cloud-native
     spec:
       containers: #docker容器的配置
-        - image: harbor.edu.cn/nju25/cloud-native:1.0.0 #pull镜像的地址
+        - image: harbor.edu.cn/nju25/cloud-native:{VERSION} #pull镜像的地址
           name: cloud-native
       imagePullSecrets:
         - name: nju25
