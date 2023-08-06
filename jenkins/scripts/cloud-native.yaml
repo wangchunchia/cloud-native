@@ -24,7 +24,7 @@ spec:
         - image: harbor.edu.cn/nju25/cloud-native:{VERSION} #pull镜像的地址
           name: cloud-native
       imagePullSecrets:
-        - name: nju25-ns-admin-token-j8qf9
+        - name: nju25
 ---
 apiVersion: v1
 kind: Service
